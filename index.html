@@ -223,7 +223,7 @@ document.addEventListener('click',function(e){
 });
 </script>
 <script>
-const P=[["원룸","180,000원~","원룸 기준"],["1.5룸","220,000원~","1.5룸 기준"],["투룸","240,000원~","투룸 기준"],["20평형","280,000원~","20평형 기준"],["30평형","400,000원~","30평형 기준 · 붙박이장 내부 청소 포함",1]];
+const P=[["원룸","200,000원~","원룸 기준"],["1.5룸","240,000원~","1.5룸 기준"],["투룸","260,000원~","투룸 기준"],["20평형","340,000원~","20평형 기준"],["30평형","480,000원~","30평형 기준 · 붙박이장 내부 청소 포함",1]];
 document.getElementById('pricelist').innerHTML=P.map(p=>`<div class="pr${p[3]?' hot':''}"><div><b>${p[0]}${p[3]?'<span class="hotb">인기</span>':''}</b><small>${p[2]}</small></div><em>${p[1]}</em></div>`).join('');
 ['1f77a415cf','f500bbc650','167288aef1','6c0a1a3a9a','60b0508ecc','7958808430','139080d1c9','81c222ad64'].forEach((f,i)=>{document.getElementById('revlist').insertAdjacentHTML('beforeend',`<img loading="lazy" src="img/${f}.png" alt="고객 후기 ${i+1}">`)});
 function route(){var r=location.hash==='#all-reviews';document.body.classList.toggle('rv',r);if(r){scrollTo(0,0);requestAnimationFrame(function(){scrollTo(0,0)});setTimeout(function(){scrollTo(0,0)},80)}}
